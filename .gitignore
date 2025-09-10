@@ -1,0 +1,53 @@
+# Linux kernel build artifacts
+*.o
+*.ko
+*.cmd
+*.mod
+*.order
+*.symvers
+*.dwo
+*.gcno
+*.gcda
+*.su
+*.a
+*.lto
+vmlinux*
+modules.order
+Module.symvers
+*.dtb
+*.dtbo
+*.dtb.S
+*.dt.yaml
+
+# Generated headers
+include/generated/
+arch/*/include/generated/
+
+# Temporary/version dirs
+.deps/
+.tmp_versions/
+
+# Patches / rejects
+*.patch.orig
+*.rej
+
+# Editors / IDE
+*.swp
+*.swo
+*.orig
+*.bak
+.tags
+.ccls-cache/
+.idea/
+.vscode/
+
+# Ccache
+ccache/
+
+# LLVMS/GCOV
+*.profraw
+
+# Firmware blobs (add specific patterns if needed)
+# firmware/*.bin
+
+# If using Git LFS for large binaries, ensure .gitattributes tracks them.
