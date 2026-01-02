@@ -16,7 +16,8 @@ Follow the Linux kernel coding style as documented in `Documentation/process/cod
 
 ### Braces and Spacing
 
-- Opening brace on the same line for functions (K&R style)
+- Opening brace on the same line for control structures (if, switch, for, while, do)
+- Opening brace on the next line for functions
 - Use spaces around binary operators (`+`, `-`, `*`, `/`, `==`, etc.)
 - No spaces after unary operators (`!`, `~`, `++`, `--`, etc.)
 - No spaces around `.` and `->` structure member operators
@@ -131,7 +132,7 @@ This is an ARM64 kernel for Samsung Exynos 2100 platform:
 
 ## Tools and Scripts
 
-- `scripts/checkpatch.pl` - Style checker (must pass)
-- `scripts/get_maintainer.pl` - Find appropriate maintainers
+- `scripts/checkpatch.pl` - Validates code style compliance (see Code Quality section)
+- `scripts/get_maintainer.pl` - Find appropriate maintainers for patches
 - `scripts/checkstack.pl` - Check for excessive stack usage
-- `scripts/coccicheck` - Semantic patch checking
+- `scripts/coccicheck` - Semantic patch checking with Coccinelle
