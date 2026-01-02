@@ -50,4 +50,7 @@ ccache/
 # Firmware blobs (add specific patterns if needed)
 # firmware/*.bin
 
+# KernelSU-Next repository (the drivers/kernelsu symlink pointing to it is tracked)
+KernelSU-Next/
+
 # If using Git LFS for large binaries, ensure .gitattributes tracks them.

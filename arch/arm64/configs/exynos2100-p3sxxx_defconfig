@@ -7469,3 +7469,4 @@ CONFIG_CORESIGHT_STM=y
 #
 # CONFIG_SEC_KUNIT is not set
 # end of KUnit support
+CONFIG_KSU=y
