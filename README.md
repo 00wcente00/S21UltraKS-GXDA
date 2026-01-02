@@ -1,3 +1,22 @@
+# S21 Ultra Exynos 2100 Kernel - Setup
+
+## Prerequisites: KernelSU Next Setup
+
+Before building this kernel, you **must** set up KernelSU-Next v3.0.0:
+
+```bash
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v3.0.0
+```
+
+This command:
+- Clones the KernelSU-Next v3.0.0 repository into `KernelSU-Next/`
+- Sets up the symlink `drivers/kernelsu` → `KernelSU-Next/kernel`
+- Must be run **once** after cloning this repository
+
+**Note**: The `KernelSU-Next/` directory is excluded from Git tracking (`.gitignore`). Every developer must run this setup command.
+
+---
+
 # How do I submit patches to Android Common Kernels
 
 1. BEST: Make all of your changes to upstream Linux. If appropriate, backport to the stable releases.
