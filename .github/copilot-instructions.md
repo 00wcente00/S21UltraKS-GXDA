@@ -71,7 +71,6 @@ All patches must follow these requirements as specified in the repository's READ
 - Test changes on at least 4-5 configurations
 - Verify both module and built-in kernel builds
 - Test on actual hardware when possible
-- Run `scripts/checkpatch.pl` before submitting
 
 ## Security Best Practices
 
